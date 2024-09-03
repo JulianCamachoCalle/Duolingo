@@ -24,24 +24,20 @@ let espanol = [
     "Roca", "Isla", "Desierto"
 ];
 
-function palabrasRandom() {
-    let n1 = Math.floor(Math.random() * 48);
-    let n2 = Math.floor(Math.random() * 48);
-    let n3 = Math.floor(Math.random() * 48);
-    let n4 = Math.floor(Math.random() * 48);
-    let n5 = Math.floor(Math.random() * 48);
-
-    //Ingles
-    document.getElementById("btn1").innerText = ingles[n1];
-    document.getElementById("btn2").innerText = ingles[n2];
-    document.getElementById("btn3").innerText = ingles[n3];
-    document.getElementById("btn4").innerText = ingles[n4];
-    document.getElementById("btn5").innerText = ingles[n5];
-
-    //Espanol
-    document.getElementById("btn7").innerText = espanol[n1];
-    document.getElementById("btn10").innerText = espanol[n2];
-    document.getElementById("btn9").innerText = espanol[n3];
-    document.getElementById("btn6").innerText = espanol[n4];
-    document.getElementById("btn8").innerText = espanol[n5];
+// Generar números aleatorios
+let indices = [];
+for (let i = 0; i < 5; i++) {
+    indices.push(Math.floor(Math.random() * 48));
 }
+
+// Asignar palabras a los botones en inglés
+for (let i = 0; i < 5; i++) {
+    document.getElementById(`btn${i + 1}`).innerText = ingles[indices[i]];
+}
+
+// Asignar traducciones a los botones en español
+let botonesEsp = [7, 10, 9, 6, 8];
+for (let i = 0; i < 5; i++) {
+    document.getElementById(`btn${botonesEsp[i]}`).innerText = espanol[indices[i]];
+}
+
