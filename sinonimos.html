@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modos.css">
+    <title>Sinonimos</title>
+</head>
+
+<body>
+    <div class="juego">
+        <div class="Retroceder">
+            <a href="index.html">X</a>
+        </div>
+        <div class="titulo">
+            SINONIMOS
+        </div>
+        <div class="contenedor">
+            <div class="fila-es">
+                <div class="celda">
+                    <button id="btn1" onclick="seleccionarBoton('palabra', 1)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn2" onclick="seleccionarBoton('palabra', 2)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn3" onclick="seleccionarBoton('palabra', 3)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn4" onclick="seleccionarBoton('palabra', 4)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn5" onclick="seleccionarBoton('palabra', 5)"></button>
+                </div>
+            </div>
+            <div class="fila-en">
+                <div class="celda">
+                    <button id="btn6" onclick="seleccionarBoton('sinonimo', 6)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn7" onclick="seleccionarBoton('sinonimo', 7)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn8" onclick="seleccionarBoton('sinonimo', 8)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn9" onclick="seleccionarBoton('sinonimo', 9)"></button>
+                </div>
+                <div class="celda">
+                    <button id="btn10" onclick="seleccionarBoton('sinonimo', 10)"></button>
+                </div>
+            </div>
+        </div>
+        <div class="vidas">
+            <div class="corazon" id="corazon1"></div>
+            <div class="corazon" id="corazon2"></div>
+            <div class="corazon" id="corazon3"></div>
+            <div class="corazon" id="corazon4"></div>
+            <div class="corazon" id="corazon5"></div>
+        </div>
+    </div>
+    <script src="gamesinonimos.js"></script>
+</body>
+
+</html>
