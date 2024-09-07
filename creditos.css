@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 35px;
+    color: white;
+}
+
+.Retroceder {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 25px;
+    position: absolute;
+    overflow-x: auto;
+    top: 150px;
+    right: 450px;
+}
+
+a {
+    color: white;
+    font-size: 2rem;
+    font-family: Impact;
+    text-decoration: none;
+    margin: 0.2rem 1rem;
+}
+
+
