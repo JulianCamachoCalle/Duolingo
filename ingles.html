@@ -10,47 +10,54 @@
 
 <body>
     <div class="juego">
+        <div class="Retroceder">
+            <a href="index.html">X</a>
+        </div>
         <div class="titulo">
-            ENGLISH - SPANISH
+            INGLES
         </div>
         <div class="contenedor">
             <div class="fila-es">
                 <div class="celda">
-                    <button id="btn1"></button>
+                    <button id="btn1" onclick="seleccionarBoton('palabra', 1)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn2"></button>
+                    <button id="btn2" onclick="seleccionarBoton('palabra', 2)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn3"></button>
+                    <button id="btn3" onclick="seleccionarBoton('palabra', 3)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn4"></button>
+                    <button id="btn4" onclick="seleccionarBoton('palabra', 4)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn5"></button>
+                    <button id="btn5" onclick="seleccionarBoton('palabra', 5)"></button>
                 </div>
             </div>
             <div class="fila-en">
                 <div class="celda">
-                    <button id="btn6"></button>
+                    <button id="btn6" onclick="seleccionarBoton('sinonimo', 6)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn7"></button>
+                    <button id="btn7" onclick="seleccionarBoton('sinonimo', 7)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn8"></button>
+                    <button id="btn8" onclick="seleccionarBoton('sinonimo', 8)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn9"></button>
+                    <button id="btn9" onclick="seleccionarBoton('sinonimo', 9)"></button>
                 </div>
                 <div class="celda">
-                    <button id="btn10"></button>
+                    <button id="btn10" onclick="seleccionarBoton('sinonimo', 10)"></button>
                 </div>
             </div>
         </div>
-        <div class="Retroceder">
-            <a href="index.html">X</a>
+        <div class="vidas">
+            <div class="corazon" id="corazon1"></div>
+            <div class="corazon" id="corazon2"></div>
+            <div class="corazon" id="corazon3"></div>
+            <div class="corazon" id="corazon4"></div>
+            <div class="corazon" id="corazon5"></div>
         </div>
     </div>
     <script src="gameingles.js"></script>
